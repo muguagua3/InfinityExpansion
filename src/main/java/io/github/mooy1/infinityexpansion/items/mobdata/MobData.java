@@ -136,7 +136,7 @@ public final class MobData {
                 new ItemStack(Material.WITHER_SKELETON_SKULL, 8), new ItemStack(Material.BONE, 64), new ItemStack(Material.WITHER_SKELETON_SKULL, 8),
                 new ItemStack(Material.COAL_BLOCK, 64), EMPTY_DATA_CARD, new ItemStack(Material.COAL_BLOCK, 64),
                 new ItemStack(Material.STONE_SWORD, 1), new ItemStack(Material.BONE, 64), new ItemStack(Material.STONE_SWORD, 1)
-        }).addDrop(Material.COAL, 2, 1).addDrop(Material.BONE, 3).addDrop(Material.WITHER_SKELETON_SKULL, 15).register(plugin);
+        }).addDrop(SlimefunItems.CARBON, 2, 1).addDrop(Material.BONE, 3).addDrop(Material.WITHER_SKELETON_SKULL, 15).register(plugin);
         new MobDataCard(ENDERMEN, MobDataTier.ADVANCED, new ItemStack[] {
                 new ItemStack(Material.ENDER_EYE, 16), new ItemStack(Material.OBSIDIAN, 64), new ItemStack(Material.ENDER_EYE, 16),
                 new ItemStack(Material.ENDER_PEARL, 16), EMPTY_DATA_CARD, new ItemStack(Material.ENDER_PEARL, 16),
@@ -172,7 +172,7 @@ public final class MobData {
                 new ItemStack(Material.WITHER_SKELETON_SKULL, 64), new ItemStack(Material.WITHER_SKELETON_SKULL, 64), new ItemStack(Material.WITHER_SKELETON_SKULL, 64),
                 new SlimefunItemStack(SlimefunItems.WITHER_PROOF_OBSIDIAN, 64), EMPTY_DATA_CARD, new SlimefunItemStack(SlimefunItems.WITHER_PROOF_OBSIDIAN, 64),
                 new SlimefunItemStack(Materials.VOID_INGOT, 4), new SlimefunItemStack(SlimefunItems.WITHER_ASSEMBLER, 4), new SlimefunItemStack(Materials.VOID_INGOT, 4)
-        }).addDrop(Material.NETHER_STAR, 1, 2).addDrop(SlimefunItems.COMPRESSED_CARBON, 8, 1).register(plugin);
+        }).addDrop(Material.NETHER_STAR, 1, 2).addDrop(SlimefunItems.COMPRESSED_CARBON, 16, 1).register(plugin);
         new MobDataCard(ENDER_DRAGON, MobDataTier.BOSS, new ItemStack[] {
                 new ItemStack(Material.END_CRYSTAL, 64), new SlimefunItemStack(Materials.VOID_INGOT, 32), new ItemStack(Material.CHORUS_FLOWER, 64),
                 SlimefunItems.INFUSED_ELYTRA, EMPTY_DATA_CARD, new ItemStack(Material.DRAGON_HEAD, 1),

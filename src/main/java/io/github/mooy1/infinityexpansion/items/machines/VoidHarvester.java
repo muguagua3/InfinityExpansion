@@ -48,7 +48,7 @@ public final class VoidHarvester extends AbstractMachineBlock implements RecipeD
 
         if (progress >= TIME) { //reached full progress
 
-            ItemStack output = Materials.VOID_BIT;
+            ItemStack output = Materials.VOID_DUST;
 
             if (inv.fits(output, OUTPUT_SLOTS)) {
 
@@ -122,7 +122,7 @@ public final class VoidHarvester extends AbstractMachineBlock implements RecipeD
         final List<ItemStack> items = new ArrayList<>();
 
         items.add(null);
-        items.add(Materials.VOID_BIT);
+        items.add(Materials.VOID_DUST);
 
         return items;
     }

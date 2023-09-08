@@ -187,6 +187,25 @@ public final class Machines {
             MachineLore.speed(1),
             MachineLore.energyPerSecond(240)
     );
+     public static final SlimefunItemStack GUA_MODI = new SlimefunItemStack(
+            "GUA_MODI",
+            Material.FURNACE,
+            "&8末地石转换机",
+            "&7将圆石变为末地石",
+            "",
+            MachineLore.speed(4),
+            MachineLore.energyPerSecond(240)
+         
+    );
+    public static final SlimefunItemStack GUA_SHENBAN = new SlimefunItemStack(
+            "GUA_SHENBAN",
+            Material.FURNACE,
+            "&8深板岩转换机",
+            "&7将圆石变为深板岩",
+            "",
+            MachineLore.speed(4),
+            MachineLore.energyPerSecond(240)
+    );
     public static final SlimefunItemStack INFINITY_DUST_EXTRACTOR = new SlimefunItemStack(
             "INFINITY_DUST_EXTRACTOR",
             Material.FURNACE,
@@ -833,7 +852,20 @@ public final class Machines {
                 Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT,
         }).addRecipe(new ItemStack(Material.QUARTZ, 4), new ItemStack(Material.NETHERRACK, 16))
                .ticksPerOutput(1).energyPerTick(3200).register(plugin);
-          
+        
+        new MachineBlock(Groups.ADVANCED_MACHINES, GUA_MODI, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
+               Materials.VOID_INGOT,COBBLE_PRESS, Materials.VOID_INGOT,
+               Materials.VOID_INGOT,COBBLE_PRESS, Materials.VOID_INGOT,
+                Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT,
+        }).addRecipe(new ItemStack(Material.END_STONE, 4), new ItemStack(Material.COBBLESTONE, 4))
+               .ticksPerOutput(4).energyPerTick(240).register(plugin);
+        
+           new MachineBlock(Groups.ADVANCED_MACHINES, GUA_SHENBAN, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
+               Materials.VOID_INGOT,Materials.VOID_INGOT, Materials.VOID_INGOT,
+               Materials.VOID_INGOT,COBBLE_PRESS, Materials.VOID_INGOT,
+                Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT,
+        }).addRecipe(new ItemStack(Material.DEEPSLATE, 4), new ItemStack(Material.COBBLESTONE, 4))
+               .ticksPerOutput(4).energyPerTick(240).register(plugin);
         new MachineBlock(Groups.INFINITY_CHEAT, INFINITY_QUARTZ_EXTRACTOR, InfinityWorkbench.TYPE, new ItemStack[] {
                 Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT,
                 Materials.VOID_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_CIRCUIT, Materials.INFINITE_CIRCUIT, Materials.INFINITE_INGOT, Materials.VOID_INGOT,

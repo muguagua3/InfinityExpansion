@@ -747,6 +747,8 @@ public final class Machines {
                 Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT,
         }).addRecipe(new SlimefunItemStack(SlimefunItems.CARBON, 64), new ItemStack(Material.DIAMOND, 16))
                 .addRecipe(new ItemStack(Material.COAL, 64), new SlimefunItemStack(SlimefunItems.CARBON, 8))
+                .addRecipe(new ItemStack(Material.SAND, 64), new ItemStack(Material.COBBLESTONE, 64))
+                .addRecipe(new ItemStack(Material.SOUL_SAND, 64), new ItemStack(Material.NETHERROCK, 64))
                 .ticksPerOutput(1).energyPerTick(16000).register(plugin);
         
         

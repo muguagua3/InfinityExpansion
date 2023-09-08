@@ -248,7 +248,7 @@ public final class Machines {
             "&7利用木瓜能量消耗钻石获得碳",
             "&7利用木瓜能量消耗碳获得煤炭",
             "",
-            MachineLore.speed(16),
+            MachineLore.speed(64),
             MachineLore.energyPerSecond(16000)
     );
     public static final SlimefunItemStack URANIUM_EXTRACTOR = new SlimefunItemStack(

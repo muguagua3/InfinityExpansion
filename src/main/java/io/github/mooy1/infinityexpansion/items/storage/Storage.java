@@ -22,39 +22,39 @@ public final class Storage {
             "&7制造或升级存储单元"
     );
 
-    private static final int BASIC_AMOUNT = 6400;
-    private static final int ADVANCED_AMOUNT = 25600;
-    private static final int REINFORCED_AMOUNT = 102400;
-    private static final int VOID_AMOUNT = 409600;
-    private static final int INFINITY_AMOUNT = 1_600_000_000;
+    private static final int BASIC_AMOUNT = 64000;
+    private static final int ADVANCED_AMOUNT = 256000;
+    private static final int REINFORCED_AMOUNT = 1024000;
+    private static final int VOID_AMOUNT = 8096000;
+    private static final int INFINITY_AMOUNT = 2_000_000_000;
 
     public static final SlimefunItemStack BASIC_STORAGE = new SlimefunItemStack(
             "BASIC_STORAGE",
-            Material.OAK_WOOD,
+            Material.DIAMOND,
             "&9基础&8存储单元",
             "&6容量: &e" + MachineLore.format(BASIC_AMOUNT) + " &e个物品"
     );
     public static final SlimefunItemStack ADVANCED_STORAGE = new SlimefunItemStack(
             "ADVANCED_STORAGE",
-            Material.DARK_OAK_WOOD,
+            Material.DIAMOND,
             "&c高级&8存储单元",
             "&6容量: &e" + MachineLore.format(ADVANCED_AMOUNT) + " &e个物品"
     );
     public static final SlimefunItemStack REINFORCED_STORAGE = new SlimefunItemStack(
             "REINFORCED_STORAGE",
-            Material.ACACIA_WOOD,
+            Material.DIAMOND,
             "&f超级&8存储单元",
             "&6容量: &e" + MachineLore.format(REINFORCED_AMOUNT) + " &e个物品"
     );
     public static final SlimefunItemStack VOID_STORAGE = new SlimefunItemStack(
             "VOID_STORAGE",
-            Material.CRIMSON_HYPHAE,
+            Material.DIAMOND,
             "&8虚空&8存储单元",
             "&6容量: &e" + MachineLore.format(VOID_AMOUNT) + " &e个物品"
     );
     public static final SlimefunItemStack INFINITY_STORAGE = new SlimefunItemStack(
             "INFINITY_STORAGE",
-            Material.WARPED_HYPHAE,
+            Material.DIAMOND,
             "&b无尽&8存储单元",
             "&6容量: &e" + MachineLore.format(INFINITY_AMOUNT) + " &e个物品"
     );

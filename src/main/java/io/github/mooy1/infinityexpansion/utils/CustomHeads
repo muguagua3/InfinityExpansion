@@ -1,0 +1,39 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package io.github.mooy1.infinityexpansion.utils;
+
+import io.github.thebusybiscuit.slimefun4.libraries.dough.skins.PlayerHead;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.skins.PlayerSkin;
+import javax.annotation.ParametersAreNonnullByDefault;
+import org.bukkit.inventory.ItemStack;
+
+public enum CustomHeads {
+    XINZI_BASIC_STORAGE("e5bbb51ad6505c03cee1b15639fe3cab315ad9430604fb7a5cd1a4a61884095e"),
+    XINZI_ADVANCED_STORAGE("3d079769a1dbf83f27d9de7482c7dea94860f964f973841eb78c4bf8154a6f2d"),
+    XINZI_REINFORCED_STORAGE("3f1baf5ca85a48d4ee99ef666a5637fb85853a68d78999856c3238299a796bc4"),
+    XINZI_VOID_STORAGE("bee972424537869f967b13a90f90b57f754bc88b6b27398a0ecc985fc26eea15"),
+    XINZI_INFINITY_STORAGE("e7c68a5b843430af767d2c74e18ee2986f7fb0e40d5416adf80b461a0fd0a34b");
+
+    private static final CustomHeads[] cachedValues = values();
+    private final String ID;
+
+    @ParametersAreNonnullByDefault
+    private CustomHeads(String ID) {
+        this.ID = ID;
+    }
+
+    public ItemStack getPlayerHead() {
+        return PlayerHead.getItemStack(PlayerSkin.fromHashCode(this.ID));
+    }
+
+    public static CustomHeads[] cachedValues() {
+        return cachedValues;
+    }
+
+    public String ID() {
+        return this.ID;
+    }
+}

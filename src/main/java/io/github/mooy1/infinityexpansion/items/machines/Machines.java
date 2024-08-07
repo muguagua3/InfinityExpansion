@@ -187,6 +187,15 @@ public final class Machines {
             MachineLore.speed(1),
             MachineLore.energyPerSecond(240)
     );
+      public static final SlimefunItemStack DUST_EXTRACTOR_2 = new SlimefunItemStack(
+            "DUST_EXTRACTOR_2 ",
+            Material.FURNACE,
+            "&8磨粉机Ⅱ",
+            "&7将圆石变为矿粉",
+            "",
+            MachineLore.speed(2),
+            MachineLore.energyPerSecond(480)
+    );
      public static final SlimefunItemStack GUA_MODI = new SlimefunItemStack(
             "GUA_MODI",
             Material.FURNACE,
@@ -223,6 +232,15 @@ public final class Machines {
             "",
             MachineLore.speed(1),
             MachineLore.energyPerSecond(240)
+    );
+     public static final SlimefunItemStack INGOT_FORMER_2 = new SlimefunItemStack(
+            "INGOT_FORMER_2 ",
+            Material.FURNACE,
+            "&8铸锭机2",
+            "&7将矿粉变为锭",
+            "",
+            MachineLore.speed(1),
+            MachineLore.energyPerSecond(480)
     );
       public static final SlimefunItemStack CARBON_PRESS_4 = new SlimefunItemStack(
             "CARBON_PRESS_4",
@@ -658,6 +676,28 @@ public final class Machines {
                 .addRecipe(twoDust, new ItemStack(Material.DIORITE, 4))
                 .addRecipe(twoDust, new ItemStack(Material.GRANITE, 4))
                 .energyPerTick(240).register(plugin);
+        
+          RandomizedItemStack eightDust = new RandomizedItemStack(
+                new SlimefunItemStack(SlimefunItems.COPPER_DUST, 8),
+                new SlimefunItemStack(SlimefunItems.ZINC_DUST, 8),
+                new SlimefunItemStack(SlimefunItems.TIN_DUST, 8),
+                new SlimefunItemStack(SlimefunItems.ALUMINUM_DUST, 8),
+                new SlimefunItemStack(SlimefunItems.LEAD_DUST, 8),
+                new SlimefunItemStack(SlimefunItems.SILVER_DUST, 8),
+                new SlimefunItemStack(SlimefunItems.GOLD_DUST, 8),
+                new SlimefunItemStack(SlimefunItems.IRON_DUST, 8),
+                new SlimefunItemStack(SlimefunItems.MAGNESIUM_DUST, 8)
+        );
+         new MachineBlock(Groups.ADVANCED_MACHINES, DUST_EXTRACTOR_2, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
+                SlimefunItems.DUST_EXTRACTOR, Materials.VOID_INGOT, SlimefunItems.DUST_EXTRACTOR,
+                Materials.MAGSTEEL_PLATE, SlimefunItems.LARGE_CAPACITOR, Materials.MAGSTEEL_PLATE,
+                Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT,
+        }).ticksPerOutput(1).addRecipe(twoDust, new ItemStack(Material.COBBLESTONE, 8))
+                .addRecipe(twoDust, new ItemStack(Material.ANDESITE, 8))
+                .addRecipe(twoDust, new ItemStack(Material.STONE, 8))
+                .addRecipe(twoDust, new ItemStack(Material.DIORITE, 8))
+                .addRecipe(twoDust, new ItemStack(Material.GRANITE, 8))
+                .energyPerTick(480).register(plugin);
 
         RandomizedItemStack sixtyFourDust = new RandomizedItemStack(
                 new SlimefunItemStack(SlimefunItems.COPPER_DUST, 64),

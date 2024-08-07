@@ -21,7 +21,7 @@ import io.github.thebusybiscuit.slimefun4.core.attributes.NotPlaceable;
  */
 public final class Strainer extends SlimefunItem implements NotPlaceable {
 
-    private static final String WIKI_PAGE = "Strainer";
+    private static final String WIKI_PAGE = "machines/strainer";
 
     private static final NamespacedKey KEY = InfinityExpansion.createKey("strainer_speed");
 

@@ -32,7 +32,7 @@ public final class MobDataCard extends SlimefunItem implements RecipeDisplayItem
 
     static final Map<String, MobDataCard> CARDS = new HashMap<>();
 
-    private static final String WIKI_PAGE = "Mob-Simulation";
+    private static final String WIKI_PAGE = "mob-simulation";
 
     public static SlimefunItemStack create(String id, MobDataTier tier) {
         // 血压起来了

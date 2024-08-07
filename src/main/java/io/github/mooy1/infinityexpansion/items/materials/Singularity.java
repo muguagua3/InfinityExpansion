@@ -22,7 +22,7 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
  */
 public final class Singularity extends UnplaceableBlock {
 
-    private static final String WIKI_PAGE = "Singularities";
+    private static final String WIKI_PAGE = "singularities";
 
     private static final double COST_MULTIPLIER =
             InfinityExpansion.config().getDouble("balance-options.singularity-cost-multiplier", 0.1, 100);

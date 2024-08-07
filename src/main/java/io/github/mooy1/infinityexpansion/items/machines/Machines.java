@@ -692,11 +692,11 @@ public final class Machines {
                 DUST_EXTRACTOR, Materials.VOID_INGOT, DUST_EXTRACTOR,
                 Materials.MAGSTEEL_PLATE, SlimefunItems.LARGE_CAPACITOR, Materials.MAGSTEEL_PLATE,
                 Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT,
-        }).ticksPerOutput(1).addRecipe(twoDust, new ItemStack(Material.COBBLESTONE, 8))
-                .addRecipe(twoDust, new ItemStack(Material.ANDESITE, 8))
-                .addRecipe(twoDust, new ItemStack(Material.STONE, 8))
-                .addRecipe(twoDust, new ItemStack(Material.DIORITE, 8))
-                .addRecipe(twoDust, new ItemStack(Material.GRANITE, 8))
+        }).ticksPerOutput(1).addRecipe(eightDust, new ItemStack(Material.COBBLESTONE, 8))
+                .addRecipe(eightDust, new ItemStack(Material.ANDESITE, 8))
+                .addRecipe(eightDust, new ItemStack(Material.STONE, 8))
+                .addRecipe(eightDust, new ItemStack(Material.DIORITE, 8))
+                .addRecipe(eightDust, new ItemStack(Material.GRANITE, 8))
                 .energyPerTick(480).register(plugin);
 
         RandomizedItemStack sixtyFourDust = new RandomizedItemStack(

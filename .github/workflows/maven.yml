@@ -36,7 +36,7 @@ jobs:
         run: mkdir staging && cp target/*.jar staging
 
       - name: Upload a Build Artifact
-        uses: uses: actions/upload-artifact@v4.3.4
+        uses: actions/upload-artifact@v4.3.4
         with:
           name: Dev Build
           path: staging

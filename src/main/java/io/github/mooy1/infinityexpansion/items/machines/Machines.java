@@ -689,7 +689,7 @@ public final class Machines {
                 new SlimefunItemStack(SlimefunItems.MAGNESIUM_DUST, 8)
         );
          new MachineBlock(Groups.ADVANCED_MACHINES, DUST_EXTRACTOR_2, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
-                SlimefunItems.DUST_EXTRACTOR, Materials.VOID_INGOT, SlimefunItems.DUST_EXTRACTOR,
+                DUST_EXTRACTOR, Materials.VOID_INGOT, DUST_EXTRACTOR,
                 Materials.MAGSTEEL_PLATE, SlimefunItems.LARGE_CAPACITOR, Materials.MAGSTEEL_PLATE,
                 Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT,
         }).ticksPerOutput(1).addRecipe(twoDust, new ItemStack(Material.COBBLESTONE, 8))

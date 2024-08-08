@@ -113,6 +113,15 @@ public final class Generators {
             MachineLore.energyBuffer(VOID_ENERGY * 100),
             MachineLore.energyPerSecond(VOID_ENERGY)
     );
+      public static final SlimefunItemStack TITANIUM_PANEL = new SlimefunItemStack(
+            "TITANIUM_PANEL",
+            Material.ORANGE_GLAZED_TERRACOTTA,
+            "&6聚钛发电机",
+            "&6利用钛能量发电",
+            "",
+            MachineLore.energyBuffer(VOID_ENERGY * 1000),
+            MachineLore.energyPerSecond(VOID_ENERGY * 10)
+    );
     public static final SlimefunItemStack INFINITE_PANEL = new SlimefunItemStack(
             "INFINITE_PANEL",
             Material.LIGHT_BLUE_GLAZED_TERRACOTTA,
@@ -194,6 +203,12 @@ public final class Generators {
                 CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL,
                 Materials.MAGNONIUM, Materials.MAGNONIUM, Materials.MAGNONIUM
         }, VOID_ENERGY, GenerationType.LUNAR).register(plugin);
+        new EnergyGenerator(Groups.ADVANCED_MACHINES, TITANIUM_PANEL, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
+                Materials.TITANIUM_ALLOY , Materials.TITANIUM_ALLOY , Materials.TITANIUM_ALLOY ,
+                VOID_PANEL,VOID_PANEL, VOID_PANEL,
+                Materials.MAGNONIUM, Materials.MAGNONIUM, Materials.MAGNONIUM
+        }, VOID_ENERGY* 10, GenerationType.LUNAR).register(plugin);
+
 
         new EnergyGenerator(Groups.INFINITY_CHEAT, INFINITE_PANEL, InfinityWorkbench.TYPE, new ItemStack[] {
                 CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL,

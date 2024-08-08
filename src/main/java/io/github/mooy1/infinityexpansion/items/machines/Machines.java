@@ -50,7 +50,7 @@ public final class Machines {
     public static final SlimefunItemStack INFINITY_COBBLE_PRESS = new SlimefunItemStack(
             "INFINITY_COBBLE_PRESS",
             Material.SMOOTH_STONE,
-            "&b瓜瓜版无尽&8圆石压缩机",
+            "&6瓜瓜版&b无尽&8圆石压缩机",
             "&7利用木瓜能量压缩圆石",
             "",
             MachineLore.speed(240),
@@ -190,7 +190,7 @@ public final class Machines {
       public static final SlimefunItemStack DUST_EXTRACTOR_2 = new SlimefunItemStack(
             "DUST_EXTRACTOR_2 ",
             Material.FURNACE,
-            "&8磨粉机Ⅱ",
+            "&6瓜瓜版&8磨粉机Ⅱ",
             "&7将圆石变为矿粉",
             "",
             MachineLore.speed(2),
@@ -199,7 +199,7 @@ public final class Machines {
      public static final SlimefunItemStack GUA_MODI = new SlimefunItemStack(
             "GUA_MODI",
             Material.FURNACE,
-            "&8末地石转换机",
+            "&6瓜瓜版&8末地石转换机",
             "&7将圆石变为末地石",
             "",
             MachineLore.speed(4),
@@ -209,7 +209,7 @@ public final class Machines {
     public static final SlimefunItemStack GUA_SHENBAN = new SlimefunItemStack(
             "GUA_SHENBAN",
             Material.FURNACE,
-            "&8深板岩转换机",
+            "&6瓜瓜版&8深板岩转换机",
             "&7将圆石变为深板岩",
             "",
             MachineLore.speed(4),
@@ -236,7 +236,7 @@ public final class Machines {
      public static final SlimefunItemStack INGOT_FORMER_2 = new SlimefunItemStack(
             "INGOT_FORMER_2 ",
             Material.FURNACE,
-            "&8铸锭机Ⅱ",
+            "&6瓜瓜版&8铸锭机Ⅱ",
             "&71比1损耗将矿粉变为锭",
             "",
             MachineLore.speed(4),
@@ -245,7 +245,7 @@ public final class Machines {
       public static final SlimefunItemStack CARBON_PRESS_4 = new SlimefunItemStack(
             "CARBON_PRESS_4",
             Material.BLACK_STAINED_GLASS,
-            "&8瓜瓜版碳压机器",
+            "&6瓜瓜版&8碳压机器",
             "&7高效压缩",
             "",
             MachineLore.speed(30),
@@ -263,7 +263,7 @@ public final class Machines {
     public static final SlimefunItemStack INFINITY_DUST_INGOT_FORMER = new SlimefunItemStack(
             "INFINITY_DUST_INGOT_FORMER",
             Material.FURNACE,
-            "&b无尽&8铸锭一体机",
+            "&6瓜瓜版&b无尽&8铸锭一体机",
             "&7将圆石随机变为锭",
             "",
             MachineLore.speed(32),
@@ -272,7 +272,7 @@ public final class Machines {
      public static final SlimefunItemStack INFINITY_DUST_INGOT_FORMER_2 = new SlimefunItemStack(
             "INFINITY_DUST_INGOT_FORMER_2",
             Material.FURNACE,
-            "&b无尽&8铸锭一体机Ⅱ",
+            "&6瓜瓜版&b无尽&8铸锭一体机Ⅱ",
             "&7将圆石随机变为锭",
             "",
             MachineLore.speed(64),
@@ -281,7 +281,7 @@ public final class Machines {
     public static final SlimefunItemStack INFINITY_GUA_INGOT_FORMER = new SlimefunItemStack(
             "INFINITY_GUA_INGOT_FORMER",
             Material.FURNACE,
-            "&b瓜瓜版无尽&8铸锭机",
+            "&6瓜瓜版&b无尽&8铸锭机",
             "&7利用木瓜能量将矿粉变为锭",
             "",
             MachineLore.speed(16),
@@ -326,7 +326,7 @@ public final class Machines {
      public static final SlimefunItemStack INFINITY_QUARTZ_EXTRACTOR = new SlimefunItemStack(
             "INFINITY_QUARTZ_EXTRACTOR",
             Material.POLISHED_BLACKSTONE,
-            "&b无尽瓜瓜版&8石英提取器",
+            "&6瓜瓜版&b无尽&8石英提取器",
             "&7利用木瓜能量在下届岩提取石英",
             "",
             MachineLore.speed(64),
@@ -430,6 +430,15 @@ public final class Machines {
             MachineLore.speed(1),
             MachineLore.energyPerSecond(120)
     );
+      public static final SlimefunItemStack SINGULARITY_CONSTRUCTOR_2 = new SlimefunItemStack(
+            "SINGULARITY_CONSTRUCTOR_2",
+            Material.QUARTZ_BRICKS,
+            "&6瓜瓜版&f高级奇点构造机",
+            "&7凝聚大量资源",
+            "",
+            MachineLore.speed(1),
+            MachineLore.energyPerSecond(120)
+    );
     public static final SlimefunItemStack INFINITY_CONSTRUCTOR = new SlimefunItemStack(
             "INFINITY_CONSTRUCTOR",
             Material.CHISELED_QUARTZ_BLOCK,
@@ -500,6 +509,11 @@ public final class Machines {
                 Materials.MACHINE_PLATE, SlimefunItems.CARBON_PRESS_3, Materials.MACHINE_PLATE,
                 Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT
         }).speed(1).energyPerTick(120).register(plugin);
+         new SingularityConstructor(Groups.ADVANCED_MACHINES, SINGULARITY_CONSTRUCTOR_2, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
+                SINGULARITY_CONSTRUCTOR, Materials.VOID_INGOT, SINGULARITY_CONSTRUCTOR,
+                Materials.MAGSTEEL_PLATE, SlimefunItems.LARGE_CAPACITOR, Materials.MAGSTEEL_PLATE,
+                Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT,
+        }).speed(4).energyPerTick(400).register(plugin);
         new SingularityConstructor(Groups.INFINITY_CHEAT, INFINITY_CONSTRUCTOR, InfinityWorkbench.TYPE, new ItemStack[] {
                 null, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, null,
                 null, Materials.VOID_INGOT, Materials.INFINITE_CIRCUIT, Materials.INFINITE_CIRCUIT, Materials.VOID_INGOT, null,

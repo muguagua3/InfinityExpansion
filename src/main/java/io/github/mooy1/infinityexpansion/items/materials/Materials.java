@@ -123,6 +123,11 @@ public final class Materials {
             Material.IRON_INGOT,
             "&7钛"
     );
+     public static final SlimefunItemStack TITANIUM_ALLOY = new SlimefunItemStack(
+            "TITANIUM_ALLOY ",
+            Material.IRON_INGOT,
+            "&6钛金"
+    );
     public static final SlimefunItemStack MYTHRIL = new SlimefunItemStack(
             "MYTHRIL",
             Material.IRON_INGOT,
@@ -338,6 +343,7 @@ public final class Materials {
         registerSmeltery(METAL_SINGULARITY, SILVER_SINGULARITY, ALUMINUM_SINGULARITY, TIN_SINGULARITY, ZINC_SINGULARITY, TITANIUM);
         registerSmeltery(MAGSTEEL, SlimefunItems.MAGNESIUM_INGOT, SlimefunItems.STEEL_INGOT, SlimefunItems.MAGNESIUM_DUST);
         registerSmeltery(TITANIUM, SlimefunItems.REINFORCED_ALLOY_INGOT, SlimefunItems.DAMASCUS_STEEL_INGOT, SlimefunItems.HARDENED_METAL_INGOT);
+        registerSmeltery(TITANIUM_ALLOY, VOID_INGOT,  COPPER_SINGULARITY, TITANIUM);
         registerSmeltery(MYTHRIL, SlimefunItems.REINFORCED_ALLOY_INGOT, IRON_SINGULARITY, SlimefunItems.HARDENED_METAL_INGOT);
         registerSmeltery(ADAMANTITE, SlimefunItems.REDSTONE_ALLOY, DIAMOND_SINGULARITY, MAGSTEEL);
         registerSmeltery(MAGNONIUM, MAGSTEEL, MAGNESIUM_SINGULARITY, ENDER_ESSENCE);

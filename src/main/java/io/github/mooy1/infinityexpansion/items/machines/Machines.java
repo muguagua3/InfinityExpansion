@@ -786,9 +786,9 @@ public final class Machines {
           new MachineBlock(Groups.INFINITY_CHEAT, INFINITY_DUST_INGOT_FORMER_2, InfinityWorkbench.TYPE, new ItemStack[] {
                 Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT,
                 Materials.VOID_INGOT, Materials.INFINITE_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
-                Materials.VOID_INGOT, Materials.INFINITE_INGOT, INFINITY_INGOT_FORMER, INFINITY_GUA_INGOT_FORMER, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
+                Materials.VOID_INGOT, Materials.INFINITE_INGOT, INFINITY_INGOT_FORMER, INFINITY_DUST_INGOT_FORMER, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
                 Materials.VOID_INGOT, Materials.INFINITE_INGOT, DUST_EXTRACTOR, DUST_EXTRACTOR, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
-                Materials.VOID_INGOT, Materials.INFINITE_INGOT, INGOT_FORMER, INGOT_FORMER, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
+                Materials.VOID_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_CORE, Materials.INFINITE_CIRCUIT, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
                 Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT,
         }).addRecipe(sixtyFourIngot, new ItemStack(Material.COBBLESTONE, 64))
                 .addRecipe(sixtyFourIngot, new ItemStack(Material.ANDESITE, 64))

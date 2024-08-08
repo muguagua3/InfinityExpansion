@@ -161,7 +161,7 @@ public final class MobData {
         }).addDrop(Material.CHICKEN, 1).addDrop(Material.FEATHER, 2).addDrop(Material.EGG, 2).register(plugin);
            new MobDataCard(PIG, MobDataTier.PASSIVE, new ItemStack[] {
                 new ItemStack(Material.PORKCHOP, 64), new ItemStack(Material.CARROT, 64), new ItemStack(Material.COOKED_PORKCHOP, 64),
-                new ItemStack(Material.SADDLE, 1), EMPTY_DATA_CARD, new ItemStack(Material.SADDLE, 16),
+                new ItemStack(Material.SADDLE, 1), EMPTY_DATA_CARD, new ItemStack(Material.SADDLE, 1),
                 new ItemStack(Material.COOKED_PORKCHOP, 64), new ItemStack(Material.CARROT, 64), new ItemStack(Material.PORKCHOP, 64)
         }).addDrop(Material.PORKCHOP, 4).register(plugin);
         new MobDataCard(IRON_GOLEM, MobDataTier.ADVANCED, new ItemStack[] {

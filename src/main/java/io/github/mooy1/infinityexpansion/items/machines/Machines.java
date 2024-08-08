@@ -405,6 +405,14 @@ public final class Machines {
             MachineLore.speed(24),
             MachineLore.energyPerSecond(60000)
     );
+     public static final SlimefunItemStack INFINITY_REDSTONE_2 = new SlimefunItemStack(
+            "INFINITY_REDSTONE_2",
+            Material.NETHERRACK,
+            "&6瓜瓜版&b无尽&8高级红石生成器",
+            "来自木瓜的后备隐藏能源",
+            MachineLore.speed(64),
+            MachineLore.energyPerSecond(100000)
+    );
      public static final SlimefunItemStack INFINITY_LAPIS_LAZULI = new SlimefunItemStack(
             "INFINITY_LAPIS_LAZULI",
             Material.NETHERRACK,
@@ -412,6 +420,14 @@ public final class Machines {
             "来自木瓜的后备隐藏能源",
             MachineLore.speed(24),
             MachineLore.energyPerSecond(60000)
+    );
+     public static final SlimefunItemStack INFINITY_LAPIS_LAZULI_2 = new SlimefunItemStack(
+            "INFINITY_LAPIS_LAZULI_2",
+            Material.NETHERRACK,
+            "&6瓜瓜版&b无尽&8高级青金石生成器",
+            "来自木瓜的后备隐藏能源",
+            MachineLore.speed(64),
+            MachineLore.energyPerSecond(100000)
     );
     public static final SlimefunItemStack BASIC_OBSIDIAN = new SlimefunItemStack(
             "BASIC_OBSIDIAN_GEN",
@@ -983,6 +999,7 @@ public final class Machines {
                 Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT,
         }).addRecipe(new ItemStack(Material.DEEPSLATE, 4), new ItemStack(Material.COBBLESTONE, 4))
                .ticksPerOutput(4).energyPerTick(240).register(plugin);
+        
         new MachineBlock(Groups.INFINITY_CHEAT, INFINITY_QUARTZ_EXTRACTOR, InfinityWorkbench.TYPE, new ItemStack[] {
                 Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT,
                 Materials.VOID_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_CIRCUIT, Materials.INFINITE_CIRCUIT, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
@@ -1003,6 +1020,16 @@ public final class Machines {
          }).addRecipe(new ItemStack(Material.REDSTONE, 24), new ItemStack(Material.COBBLESTONE, 32))
                .ticksPerOutput(1).energyPerTick(60000).register(plugin);
         
+        new MachineBlock(Groups.INFINITY_CHEAT, INFINITY_REDSTONE_2, InfinityWorkbench.TYPE, new ItemStack[] {
+                Materials.INFINITE_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.INFINITE_INGOT,
+                Materials.VOID_INGOT, Quarries.VOID_QUARRY, Quarries.VOID_QUARRY, Quarries.VOID_QUARRY, Quarries.VOID_QUARRY,Materials.VOID_INGOT,
+                Materials.VOID_INGOT, INFINITY_REDSTONE,Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, INFINITY_REDSTONE, Materials.VOID_INGOT,
+                Materials.VOID_INGOT, Quarries.REDSTONE_OSCILLATOR,Quarries.REDSTONE_OSCILLATOR, Quarries.REDSTONE_OSCILLATOR,Quarries.REDSTONE_OSCILLATOR, Materials.VOID_INGOT,
+                Materials.VOID_INGOT, Quarries.VOID_QUARRY, Quarries.VOID_QUARRY,Quarries.VOID_QUARRY, Quarries.VOID_QUARRY, Materials.VOID_INGOT,
+                Materials.INFINITE_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.INFINITE_INGOT,
+         }).addRecipe(new ItemStack(Material.REDSTONE, 64), new ItemStack(Material.COBBLESTONE, 64))
+               .ticksPerOutput(1).energyPerTick(100000).register(plugin);
+        
          new MachineBlock(Groups.INFINITY_CHEAT, INFINITY_LAPIS_LAZULI, InfinityWorkbench.TYPE, new ItemStack[] {
                 Materials.INFINITE_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.INFINITE_INGOT,
                 Materials.VOID_INGOT, Quarries.VOID_QUARRY, Quarries.VOID_QUARRY, Quarries.VOID_QUARRY, Quarries.VOID_QUARRY, Materials.VOID_INGOT,
@@ -1012,6 +1039,16 @@ public final class Machines {
                 Materials.INFINITE_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.INFINITE_INGOT,
          }).addRecipe(new ItemStack(Material.LAPIS_LAZULI, 24), new ItemStack(Material.COBBLESTONE, 32))
                .ticksPerOutput(1).energyPerTick(60000).register(plugin);
+        
+         new MachineBlock(Groups.INFINITY_CHEAT, INFINITY_LAPIS_LAZULI_2, InfinityWorkbench.TYPE, new ItemStack[] {
+                Materials.INFINITE_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.INFINITE_INGOT,
+                Materials.VOID_INGOT, Quarries.VOID_QUARRY, Quarries.VOID_QUARRY, Quarries.VOID_QUARRY, Quarries.VOID_QUARRY, Materials.VOID_INGOT,
+                Materials.VOID_INGOT,INFINITY_LAPIS_LAZULI, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, INFINITY_LAPIS_LAZULI, Materials.VOID_INGOT,
+                Materials.VOID_INGOT,Quarries.LAPIS_OSCILLATOR, Quarries.LAPIS_OSCILLATOR, Quarries.LAPIS_OSCILLATOR, Quarries.LAPIS_OSCILLATOR, Materials.VOID_INGOT,
+                Materials.VOID_INGOT, Quarries.VOID_QUARRY,Quarries.VOID_QUARRY, Quarries.VOID_QUARRY,Quarries.VOID_QUARRY, Materials.VOID_INGOT,
+                Materials.INFINITE_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.INFINITE_INGOT,
+         }).addRecipe(new ItemStack(Material.LAPIS_LAZULI, 64), new ItemStack(Material.COBBLESTONE, 64))
+               .ticksPerOutput(1).energyPerTick(100000).register(plugin);
         
         new MachineBlock(Groups.ADVANCED_MACHINES, DECOMPRESSOR, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
                 Materials.MAGSTEEL_PLATE, Materials.MAGSTEEL_PLATE, Materials.MAGSTEEL_PLATE,

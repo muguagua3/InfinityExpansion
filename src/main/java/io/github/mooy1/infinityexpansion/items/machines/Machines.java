@@ -236,7 +236,7 @@ public final class Machines {
      public static final SlimefunItemStack INGOT_FORMER_2 = new SlimefunItemStack(
             "INGOT_FORMER_2 ",
             Material.FURNACE,
-            "&8铸锭机2",
+            "&8铸锭机Ⅱ",
             "&71比1损耗将矿粉变为锭",
             "",
             MachineLore.speed(4),

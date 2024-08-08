@@ -172,10 +172,10 @@ public final class MobData {
                 new ItemStack(Material.COOKED_PORKCHOP, 64), new ItemStack(Material.CARROT, 64), new ItemStack(Material.PORKCHOP, 64)
         }).addDrop(Material.PORKCHOP, 4).register(plugin);
         new MobDataCard(SQUID, MobDataTier.PASSIVE, new ItemStack[] {
-                new ItemStack(Material.INK_SAC, 64), new ItemStack(Material.CARROT, 64), new ItemStack(Material.GLOW_INK_SAC, 64),
+                new ItemStack(Material.INK_SAC, 64), new ItemStack(Material.CARROT, 1), new ItemStack(Material.INK_SAC, 64),
                 new ItemStack(Material.BLACK_DYE, 64), EMPTY_DATA_CARD, new ItemStack(Material.BLACK_DYE, 64),
-                new ItemStack(Material.GLOW_INK_SAC, 64), new ItemStack(Material.CARROT, 64), new ItemStack(Material.INK_SAC, 64)
-        }).addDrop(Material.GLOW_INK_SAC, 4).addDrop(Material.INK_SAC, 4).register(plugin);
+                new ItemStack(Material.INK_SAC, 64), new ItemStack(Material.CARROT, 1), new ItemStack(Material.INK_SAC, 64)
+        }).addDrop(Material.INK_SAC, 4).register(plugin);
         new MobDataCard(IRON_GOLEM, MobDataTier.ADVANCED, new ItemStack[] {
                 new ItemStack(Material.IRON_BLOCK, 64), new ItemStack(Material.PUMPKIN, 16), new ItemStack(Material.IRON_BLOCK, 64),
                 new ItemStack(Material.POPPY, 16), EMPTY_DATA_CARD, new ItemStack(Material.POPPY, 16),

@@ -465,6 +465,15 @@ public final class Machines {
             MachineLore.speed(1),
             MachineLore.energyPerSecond(700)
     );
+     public static final SlimefunItemStack VOID_HARVESTER_2 = new SlimefunItemStack(
+            "VOID_HARVESTER_2",
+            Material.OBSIDIAN,
+            "&6瓜瓜版&8高级虚空收集者",
+            "&7从虚无中缓慢收集&8虚空粉",
+            "",
+            MachineLore.speed(4),
+            MachineLore.energyPerSecond(2000)
+    );
     public static final SlimefunItemStack INFINITE_VOID_HARVESTER = new SlimefunItemStack(
             "INFINITE_VOID_HARVESTER",
             Material.CRYING_OBSIDIAN,
@@ -490,6 +499,11 @@ public final class Machines {
                 Materials.MACHINE_PLATE, SlimefunItems.GEO_MINER, Materials.MACHINE_PLATE,
                 Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT
         }, 1).energyPerTick(700).register(plugin);
+         new VoidHarvester(Groups.ADVANCED_MACHINES, VOID_HARVESTER_2, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
+                VOID_HARVESTER, Materials.VOID_INGOT, VOID_HARVESTER,
+                Materials.MAGSTEEL_PLATE, SlimefunItems.LARGE_CAPACITOR, Materials.MAGSTEEL_PLATE,
+                Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT,
+        }, 4).energyPerTick(2000).register(plugin);
         new VoidHarvester(Groups.INFINITY_CHEAT, INFINITE_VOID_HARVESTER, InfinityWorkbench.TYPE, new ItemStack[] {
                 Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE,
                 Materials.MAGNONIUM, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.MAGNONIUM,

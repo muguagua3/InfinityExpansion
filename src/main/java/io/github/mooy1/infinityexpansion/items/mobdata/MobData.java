@@ -51,6 +51,7 @@ public final class MobData {
     public static final SlimefunItemStack COW = MobDataCard.create("Cow", MobDataTier.PASSIVE);
     public static final SlimefunItemStack SHEEP = MobDataCard.create("Sheep", MobDataTier.PASSIVE);
     public static final SlimefunItemStack CHICKEN = MobDataCard.create("Chicken", MobDataTier.PASSIVE);
+    public static final SlimefunItemStack PIG = MobDataCard.create("Pig", MobDataTier.PASSIVE);
     public static final SlimefunItemStack VILLAGER = MobDataCard.create("Villager", MobDataTier.NEUTRAL);
 
     public static final SlimefunItemStack BEE = MobDataCard.create("Bee", MobDataTier.NEUTRAL);
@@ -158,6 +159,11 @@ public final class MobData {
                 new ItemStack(Material.EGG, 16), EMPTY_DATA_CARD, new ItemStack(Material.EGG, 16),
                 new ItemStack(Material.COOKED_CHICKEN, 64), new ItemStack(Material.FEATHER, 64), new ItemStack(Material.CHICKEN, 64)
         }).addDrop(Material.CHICKEN, 1).addDrop(Material.FEATHER, 2).addDrop(Material.EGG, 2).register(plugin);
+           new MobDataCard(PIG, MobDataTier.PASSIVE, new ItemStack[] {
+                new ItemStack(Material.POAKCHOP, 64), new ItemStack(Material.CARROT, 64), new ItemStack(Material.COOKED_POAKCHOP, 64),
+                new ItemStack(Material.SADDLE, 1), EMPTY_DATA_CARD, new ItemStack(Material.SADDLE, 16),
+                new ItemStack(Material.COOKED_POAKCHOP, 64), new ItemStack(Material.CARROT, 64), new ItemStack(Material.POAKCHOP, 64)
+        }).addDrop(Material.POAKCHOP, 4).register(plugin);
         new MobDataCard(IRON_GOLEM, MobDataTier.ADVANCED, new ItemStack[] {
                 new ItemStack(Material.IRON_BLOCK, 64), new ItemStack(Material.PUMPKIN, 16), new ItemStack(Material.IRON_BLOCK, 64),
                 new ItemStack(Material.POPPY, 16), EMPTY_DATA_CARD, new ItemStack(Material.POPPY, 16),

@@ -354,16 +354,16 @@ public final class Machines {
             Material.SMOOTH_STONE,
             "&9基础&8圆石生成器",
             "",
-            MachineLore.speed(1),
-            MachineLore.energyPerSecond(24)
+            MachineLore.speed(2),
+            MachineLore.energyPerSecond(25)
     );
     public static final SlimefunItemStack ADVANCED_COBBLE = new SlimefunItemStack(
             "ADVANCED_COBBLE_GEN",
             Material.SMOOTH_STONE,
             "&c高级&8圆石生成器",
             "",
-            MachineLore.speed(4),
-            MachineLore.energyPerSecond(120)
+            MachineLore.speed(8),
+            MachineLore.energyPerSecond(100)
     );
     public static final SlimefunItemStack INFINITY_COBBLE = new SlimefunItemStack(
             "INFINITY_COBBLE_GEN",
@@ -562,18 +562,18 @@ public final class Machines {
                 Materials.MAGSTEEL, new ItemStack(Material.DIAMOND_PICKAXE), Materials.MAGSTEEL,
                 new ItemStack(Material.WATER_BUCKET), Materials.COBBLE_2, new ItemStack(Material.LAVA_BUCKET),
                 Materials.MAGSTEEL, Materials.MACHINE_CIRCUIT, Materials.MAGSTEEL
-        }).material(Material.COBBLESTONE).speed(1).energyPerTick(24).register(plugin);
+        }).material(Material.COBBLESTONE).speed(2).energyPerTick(25).register(plugin);
         new MaterialGenerator(Groups.ADVANCED_MACHINES, ADVANCED_COBBLE, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
                 Materials.MAGSTEEL_PLATE, BASIC_COBBLE, Materials.MAGSTEEL_PLATE,
                 new ItemStack(Material.WATER_BUCKET), Materials.COBBLE_3, new ItemStack(Material.LAVA_BUCKET),
                 Materials.MACHINE_CIRCUIT, BASIC_COBBLE, Materials.MACHINE_CIRCUIT
-        }).material(Material.COBBLESTONE).speed(4).energyPerTick(75).register(plugin);
+        }).material(Material.COBBLESTONE).speed(8).energyPerTick(100).register(plugin);
         new MaterialGenerator(Groups.INFINITY_CHEAT, INFINITY_COBBLE, InfinityWorkbench.TYPE, new ItemStack[] {
                 Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT,
-                Materials.VOID_INGOT, ADVANCED_COBBLE, ADVANCED_COBBLE, ADVANCED_COBBLE, ADVANCED_COBBLE, Materials.VOID_INGOT,
-                Materials.VOID_INGOT, ADVANCED_COBBLE, ADVANCED_COBBLE, ADVANCED_COBBLE, ADVANCED_COBBLE, Materials.VOID_INGOT,
-                Materials.VOID_INGOT, ADVANCED_COBBLE, ADVANCED_COBBLE, ADVANCED_COBBLE, ADVANCED_COBBLE, Materials.VOID_INGOT,
-                Materials.VOID_INGOT, ADVANCED_COBBLE, ADVANCED_COBBLE, ADVANCED_COBBLE, ADVANCED_COBBLE, Materials.VOID_INGOT,
+                Materials.VOID_INGOT, null, ADVANCED_COBBLE, ADVANCED_COBBLE, null, Materials.VOID_INGOT,
+                Materials.VOID_INGOT, null, ADVANCED_COBBLE, ADVANCED_COBBLE, null, Materials.VOID_INGOT,
+                Materials.VOID_INGOT, null, ADVANCED_COBBLE, ADVANCED_COBBLE, null, Materials.VOID_INGOT,
+                Materials.VOID_INGOT, null, ADVANCED_COBBLE, ADVANCED_COBBLE, null, Materials.VOID_INGOT,
                 Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT
         }).material(Material.COBBLESTONE).speed(64).energyPerTick(800).register(plugin);
         

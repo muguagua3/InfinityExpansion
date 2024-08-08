@@ -269,6 +269,15 @@ public final class Machines {
             MachineLore.speed(32),
             MachineLore.energyPerSecond(10000)
     );
+     public static final SlimefunItemStack INFINITY_DUST_INGOT_FORMER_2 = new SlimefunItemStack(
+            "INFINITY_DUST_INGOT_FORMER_2",
+            Material.FURNACE,
+            "&b无尽&8铸锭一体机Ⅱ",
+            "&7将圆石随机变为锭",
+            "",
+            MachineLore.speed(64),
+            MachineLore.energyPerSecond(15000)
+    );
     public static final SlimefunItemStack INFINITY_GUA_INGOT_FORMER = new SlimefunItemStack(
             "INFINITY_GUA_INGOT_FORMER",
             Material.FURNACE,
@@ -748,6 +757,31 @@ public final class Machines {
                 .addRecipe(thirtyTwoIngot, new ItemStack(Material.DIORITE, 64))
                 .addRecipe(thirtyTwoIngot, new ItemStack(Material.GRANITE, 64))
                 .ticksPerOutput(1).energyPerTick(10000).register(plugin);
+        
+         RandomizedItemStack sixtyFourIngot = new RandomizedItemStack(
+                new SlimefunItemStack(SlimefunItems.COPPER_INGOT, 64),
+                new SlimefunItemStack(SlimefunItems.ZINC_INGOT, 64),
+                new SlimefunItemStack(SlimefunItems.TIN_INGOT, 64),
+                new SlimefunItemStack(SlimefunItems.ALUMINUM_INGOT, 64),
+                new SlimefunItemStack(SlimefunItems.LEAD_INGOT, 64),
+                new SlimefunItemStack(SlimefunItems.SILVER_INGOT, 64),
+                new ItemStack(Material.GOLD_INGOT, 64),
+                new ItemStack(Material.IRON_INGOT, 64),
+                new SlimefunItemStack(SlimefunItems.MAGNESIUM_INGOT, 64)
+              );
+          new MachineBlock(Groups.INFINITY_CHEAT, INFINITY_DUST_INGOT_FORMER_2, InfinityWorkbench.TYPE, new ItemStack[] {
+                Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT,
+                Materials.VOID_INGOT, Materials.INFINITE_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
+                Materials.VOID_INGOT, Materials.INFINITE_INGOT, INFINITY_INGOT_FORMER, INFINITY_GUA_INGOT_FORMER, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
+                Materials.VOID_INGOT, Materials.INFINITE_INGOT, DUST_EXTRACTOR, DUST_EXTRACTOR, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
+                Materials.VOID_INGOT, Materials.INFINITE_INGOT, INGOT_FORMER, INGOT_FORMER, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
+                Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT,
+        }).addRecipe(sixtyFourIngot, new ItemStack(Material.COBBLESTONE, 64))
+                .addRecipe(sixtyFourIngot, new ItemStack(Material.ANDESITE, 64))
+                .addRecipe(sixtyFourIngot, new ItemStack(Material.STONE, 64))
+                .addRecipe(sixtyFourIngot, new ItemStack(Material.DIORITE, 64))
+                .addRecipe(sixtyFourIngot, new ItemStack(Material.GRANITE, 64))
+                .ticksPerOutput(1).energyPerTick(15000).register(plugin);
     
         
         new MachineBlock(Groups.ADVANCED_MACHINES, COBBLE_PRESS, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
@@ -849,7 +883,7 @@ public final class Machines {
                 Materials.VOID_INGOT, Materials.INFINITE_INGOT, INGOT_FORMER,INGOT_FORMER, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
                 Materials.VOID_INGOT, Materials.INFINITE_INGOT, INFINITY_INGOT_FORMER, INFINITY_INGOT_FORMER, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
                 Materials.VOID_INGOT, Materials.INFINITE_INGOT, INGOT_FORMER, INGOT_FORMER, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
-                Materials.VOID_INGOT, Materials.INFINITE_INGOT, INGOT_FORMER,  Materials.VOID_SINGULARITY, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
+                Materials.VOID_INGOT, Materials.INFINITE_INGOT,  Materials.INFINITE_MACHINE_CORE,  Materials.INFINITE_MACHINE_CIRCUIT, Materials.INFINITE_INGOT, Materials.VOID_INGOT,
                 Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT,
         }).addRecipe(new SlimefunItemStack(SlimefunItems.COPPER_INGOT, 64), new SlimefunItemStack(SlimefunItems.COPPER_DUST, 64))
                 .addRecipe(new SlimefunItemStack(SlimefunItems.ZINC_INGOT, 64), new SlimefunItemStack(SlimefunItems.ZINC_DUST, 64))

@@ -436,8 +436,8 @@ public final class Machines {
             "&6瓜瓜版&f高级奇点构造机",
             "&7凝聚大量资源",
             "",
-            MachineLore.speed(1),
-            MachineLore.energyPerSecond(120)
+            MachineLore.speed(4),
+            MachineLore.energyPerSecond(500)
     );
     public static final SlimefunItemStack INFINITY_CONSTRUCTOR = new SlimefunItemStack(
             "INFINITY_CONSTRUCTOR",

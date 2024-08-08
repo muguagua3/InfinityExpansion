@@ -119,8 +119,8 @@ public final class Generators {
             "&6聚钛发电机",
             "&6利用钛能量发电",
             "",
-            MachineLore.energyBuffer(VOID_ENERGY * 1000),
-            MachineLore.energyPerSecond(VOID_ENERGY * 10)
+            MachineLore.energyBuffer(VOID_ENERGY * 500),
+            MachineLore.energyPerSecond(VOID_ENERGY * 5)
     );
     public static final SlimefunItemStack INFINITE_PANEL = new SlimefunItemStack(
             "INFINITE_PANEL",
@@ -138,7 +138,7 @@ public final class Generators {
             "&7利用木瓜能量发电",
             "",
             MachineLore.energyBuffer(INFINITY_REACTOR_ENERGY * 4000),
-            MachineLore.energyPerSecond(INFINITY_REACTOR_ENERGY * 5)
+            MachineLore.energyPerSecond(INFINITY_REACTOR_ENERGY * 7)
     );
      public static final SlimefunItemStack INFINITY_GUA_SHEN_PANEL = new SlimefunItemStack(
             "INFINITY_GUA_SHEN_PANEL",
@@ -207,7 +207,7 @@ public final class Generators {
                 Materials.TITANIUM_ALLOY , Materials.TITANIUM_ALLOY , Materials.TITANIUM_ALLOY ,
                 VOID_PANEL,VOID_PANEL, VOID_PANEL,
                 Materials.MAGNONIUM, Materials.MAGNONIUM, Materials.MAGNONIUM
-        }, VOID_ENERGY* 10, GenerationType.LUNAR).register(plugin);
+        }, VOID_ENERGY * 5, GenerationType.INFINITY).register(plugin);
 
 
         new EnergyGenerator(Groups.INFINITY_CHEAT, INFINITE_PANEL, InfinityWorkbench.TYPE, new ItemStack[] {
@@ -224,9 +224,9 @@ public final class Generators {
                 CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL,
                 Materials.INFINITY_SINGULARITY, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITY_SINGULARITY,
                 Materials.INFINITE_INGOT, Materials.INFINITE_CIRCUIT, Materials.INFINITE_CORE, Materials.INFINITE_CORE, Materials.INFINITE_CIRCUIT, Materials.INFINITE_INGOT,
-                Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT,
+                INFINITE_PANEL, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT,INFINITE_PANEL,
                 VOID_PANEL, VOID_PANEL, VOID_PANEL, VOID_PANEL, VOID_PANEL, VOID_PANEL
-        }, INFINITY_REACTOR_ENERGY * 5, GenerationType.INFINITY).register(plugin);
+        }, INFINITY_REACTOR_ENERGY * 7, GenerationType.INFINITY).register(plugin);
         
           new EnergyGenerator(Groups.INFINITY_CHEAT, INFINITY_GUA_SHEN_PANEL, InfinityWorkbench.TYPE, new ItemStack[] {
                 CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL, CELESTIAL_PANEL,

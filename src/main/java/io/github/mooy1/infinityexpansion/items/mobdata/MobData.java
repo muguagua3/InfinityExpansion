@@ -166,12 +166,12 @@ public final class MobData {
                 new ItemStack(Material.EGG, 16), EMPTY_DATA_CARD, new ItemStack(Material.EGG, 16),
                 new ItemStack(Material.COOKED_CHICKEN, 64), new ItemStack(Material.FEATHER, 64), new ItemStack(Material.CHICKEN, 64)
         }).addDrop(Material.CHICKEN, 1).addDrop(Material.FEATHER, 2).addDrop(Material.EGG, 2).register(plugin);
-           new MobDataCard(PIG, MobDataTier.PASSIVE, new ItemStack[] {
+        new MobDataCard(PIG, MobDataTier.PASSIVE, new ItemStack[] {
                 new ItemStack(Material.PORKCHOP, 64), new ItemStack(Material.CARROT, 64), new ItemStack(Material.COOKED_PORKCHOP, 64),
                 new ItemStack(Material.SADDLE, 1), EMPTY_DATA_CARD, new ItemStack(Material.SADDLE, 1),
                 new ItemStack(Material.COOKED_PORKCHOP, 64), new ItemStack(Material.CARROT, 64), new ItemStack(Material.PORKCHOP, 64)
         }).addDrop(Material.PORKCHOP, 4).register(plugin);
-         new MobDataCard(SQUID, MobDataTier.PASSIVE, new ItemStack[] {
+        new MobDataCard(SQUID, MobDataTier.PASSIVE, new ItemStack[] {
                 new ItemStack(Material.INK_SAC, 64), new ItemStack(Material.CARROT, 64), new ItemStack(Material.GLOW_INK_SAC, 64),
                 new ItemStack(Material.BLACK_DYE, 64), EMPTY_DATA_CARD, new ItemStack(Material.BLACK_DYE, 64),
                 new ItemStack(Material.GLOW_INK_SAC, 64), new ItemStack(Material.CARROT, 64), new ItemStack(Material.INK_SAC, 64)

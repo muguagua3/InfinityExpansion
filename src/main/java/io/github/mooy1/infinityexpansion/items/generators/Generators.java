@@ -138,7 +138,7 @@ public final class Generators {
             "&7利用木瓜能量发电",
             "",
             MachineLore.energyBuffer(INFINITY_REACTOR_ENERGY * 4000),
-            MachineLore.energyPerSecond(INFINITY_REACTOR_ENERGY * 7)
+            MachineLore.energyPerSecond(INFINITY_REACTOR_ENERGY * 9)
     );
      public static final SlimefunItemStack INFINITY_GUA_SHEN_PANEL = new SlimefunItemStack(
             "INFINITY_GUA_SHEN_PANEL",

@@ -59,6 +59,16 @@ public final class Generators {
             MachineLore.energyBuffer(ADVANCED_HYDRO_ENERGY * 100),
             MachineLore.energyPerSecond(ADVANCED_HYDRO_ENERGY)
     );
+     public static final SlimefunItemStack CELESTIAL_HYDRO = new SlimefunItemStack(
+            "CELESTIAL_HYDRO_GENERATOR",
+            Material.SANDSTONE_WALL,
+            "&6超级&9水力发电机",
+            "&7利用水流发电",
+            "&7使用方法: 使发电机成为含水方块",
+            "",
+            MachineLore.energyBuffer(ADVANCED_HYDRO_ENERGY * 500),
+            MachineLore.energyPerSecond(ADVANCED_HYDRO_ENERGY* 6)
+    );
     public static final SlimefunItemStack GEOTHERMAL = new SlimefunItemStack(
             "GEOTHERMAL_GENERATOR",
             Material.MAGMA_BLOCK,
@@ -170,6 +180,11 @@ public final class Generators {
                 Materials.MAGSTEEL_PLATE, Materials.MACHINE_CORE, Materials.MAGSTEEL_PLATE,
                 HYDRO, Materials.MACHINE_CIRCUIT, HYDRO
         }, ADVANCED_HYDRO_ENERGY, GenerationType.HYDROELECTRIC).register(plugin);
+         new EnergyGenerator(Groups.ADVANCED_MACHINES, REINFORCED_HYDRO, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
+                CELESTIAL_HYDRO, Materials.MACHINE_CIRCUIT, CELESTIAL_HYDRO,
+                Materials.MAGSTEEL_PLATE, Materials.MACHINE_CORE, Materials.MAGSTEEL_PLATE,
+                CELESTIAL_HYDRO, Materials.MACHINE_CIRCUIT, CELESTIAL_HYDRO
+        }, ADVANCED_HYDRO_ENERGY* 6, GenerationType.HYDROELECTRIC).register(plugin);
 
         new EnergyGenerator(Groups.ADVANCED_MACHINES, GEOTHERMAL, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
                 Materials.MAGSTEEL_PLATE, Materials.MAGSTEEL_PLATE, Materials.MAGSTEEL_PLATE,

@@ -191,5 +191,4 @@ public final class Quarries {
                 Materials.VOID_INGOT, null, null, null, null, Materials.VOID_INGOT
         }, 64, 1, outputs.toArray(new Material[0])).energyPerTick(36000).register(plugin);
     }
-
 }

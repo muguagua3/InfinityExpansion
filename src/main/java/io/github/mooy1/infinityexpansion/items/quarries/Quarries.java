@@ -170,7 +170,7 @@ public final class Quarries {
                 Materials.VOID_INGOT, null, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, null, Materials.VOID_INGOT,
                 Materials.VOID_INGOT, null, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, null, Materials.VOID_INGOT,
                 Materials.VOID_INGOT, null, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, null, Materials.VOID_INGOT
-        }, 64, 1, outputs.toArray(new Material[0])).energyPerTick(36000).register(plugin);
+        }, 64, 1, outputs.toArray(new Material[0]), 64, 1, outputs.toArray(new Material[0])).energyPerTick(36000).register(plugin);
     }
 
 }

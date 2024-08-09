@@ -226,7 +226,7 @@ public final class Generators {
                 Materials.INFINITE_INGOT, Materials.INFINITE_CIRCUIT, Materials.INFINITE_CORE, Materials.INFINITE_CORE, Materials.INFINITE_CIRCUIT, Materials.INFINITE_INGOT,
                 INFINITE_PANEL, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT,INFINITE_PANEL,
                  null, null, TITANIUM_PANEL, TITANIUM_PANEL, null, null
-        }, INFINITY_REACTOR_ENERGY * 7, GenerationType.INFINITY).register(plugin);
+        }, INFINITY_REACTOR_ENERGY * 9, GenerationType.INFINITY).register(plugin);
         
           new EnergyGenerator(Groups.INFINITY_CHEAT, INFINITY_GUA_SHEN_PANEL, InfinityWorkbench.TYPE, new ItemStack[] {
                  Materials.VOID_INGOT, Materials.VOID_INGOT,  Materials.VOID_INGOT,  Materials.VOID_INGOT,  Materials.VOID_INGOT,  Materials.VOID_INGOT,

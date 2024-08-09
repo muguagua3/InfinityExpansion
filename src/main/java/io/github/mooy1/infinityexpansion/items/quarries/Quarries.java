@@ -67,7 +67,7 @@ public final class Quarries {
     public static final double LAPIS_CHANCE = getOscillatorChance("lapis");
     public static final double EMERALD_CHANCE = getOscillatorChance("emerald");
     public static final double QUARTZ_CHANCE = getOscillatorChance("quartz");
-    public static final double NETHERITE_CHANCE = getOscillatorChance("netherite_ingot");
+    public static final double NETHERITE_CHANCE = getOscillatorChance("netherite");
     public static final SlimefunItemStack DIAMOND_OSCILLATOR = Oscillator.create(Material.DIAMOND, DIAMOND_CHANCE);
     public static final SlimefunItemStack REDSTONE_OSCILLATOR = Oscillator.create(Material.REDSTONE, REDSTONE_CHANCE);
     public static final SlimefunItemStack LAPIS_OSCILLATOR = Oscillator.create(Material.LAPIS_LAZULI, LAPIS_CHANCE);
@@ -137,6 +137,7 @@ public final class Quarries {
         }
 
         if (section.getBoolean("netherite")) {
+            new Oscillator(NETHERITE_OSCILLATOR, NETHERITE_CHANCE).register(plugin);
             outputs.add(Material.NETHERITE_INGOT);
         }
 

@@ -193,7 +193,7 @@ public final class Machines {
             "&6瓜瓜版&8磨粉机Ⅱ",
             "&7将圆石变为矿粉",
             "",
-            MachineLore.speed(2),
+            MachineLore.speed(4),
             MachineLore.energyPerSecond(480)
     );
      public static final SlimefunItemStack GUA_MODI = new SlimefunItemStack(
@@ -746,10 +746,10 @@ public final class Machines {
                 Materials.MAGSTEEL_PLATE, SlimefunItems.LARGE_CAPACITOR, Materials.MAGSTEEL_PLATE,
                 Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT,
         }).ticksPerOutput(1).addRecipe(eightDust, new ItemStack(Material.COBBLESTONE, 16))
-                .addRecipe(eightDust, new ItemStack(Material.ANDESITE, 8))
-                .addRecipe(eightDust, new ItemStack(Material.STONE, 8))
-                .addRecipe(eightDust, new ItemStack(Material.DIORITE, 8))
-                .addRecipe(eightDust, new ItemStack(Material.GRANITE, 8))
+                .addRecipe(eightDust, new ItemStack(Material.ANDESITE, 16))
+                .addRecipe(eightDust, new ItemStack(Material.STONE, 16))
+                .addRecipe(eightDust, new ItemStack(Material.DIORITE, 16))
+                .addRecipe(eightDust, new ItemStack(Material.GRANITE, 16))
                 .energyPerTick(500).register(plugin);
 
         RandomizedItemStack sixtyFourDust = new RandomizedItemStack(
@@ -882,7 +882,7 @@ public final class Machines {
                 .addRecipe(new SlimefunItemStack(SlimefunItems.GOLD_24K, 2), new SlimefunItemStack(SlimefunItems.GOLD_DUST, 8))
                 .addRecipe(new ItemStack(Material.IRON_INGOT, 8), new SlimefunItemStack(SlimefunItems.IRON_DUST, 8))
                 .addRecipe(new SlimefunItemStack(SlimefunItems.MAGNESIUM_INGOT, 8), new SlimefunItemStack(SlimefunItems.MAGNESIUM_DUST, 8))
-                .ticksPerOutput(2).energyPerTick(480).register(plugin);
+                .ticksPerOutput(1).energyPerTick(480).register(plugin);
                 
          new CarbonPress(Groups.ADVANCED_MACHINES, CARBON_PRESS_4, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
                 SlimefunItems.CARBON_PRESS_2, SlimefunItems.CARBON_PRESS_2, SlimefunItems.CARBON_PRESS_2,

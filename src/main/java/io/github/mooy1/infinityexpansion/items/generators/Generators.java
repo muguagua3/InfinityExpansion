@@ -182,9 +182,9 @@ public final class Generators {
         }, ADVANCED_HYDRO_ENERGY, GenerationType.HYDROELECTRIC).register(plugin);
         
          new EnergyGenerator(Groups.ADVANCED_MACHINES, CELESTIAL_HYDRO, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
-                CELESTIAL_HYDRO, Materials.MACHINE_CIRCUIT, CELESTIAL_HYDRO,
+                REINFORCED_HYDRO, Materials.MACHINE_CIRCUIT, REINFORCED_HYDRO,
                 Materials.MAGSTEEL_PLATE, Materials.MACHINE_CORE, Materials.MAGSTEEL_PLATE,
-                CELESTIAL_HYDRO, Materials.MACHINE_CIRCUIT, CELESTIAL_HYDRO
+                REINFORCED_HYDRO, Materials.MACHINE_CIRCUIT, REINFORCED_HYDRO
         }, ADVANCED_HYDRO_ENERGY* 6, GenerationType.HYDROELECTRIC).register(plugin);
 
         new EnergyGenerator(Groups.ADVANCED_MACHINES, GEOTHERMAL, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {

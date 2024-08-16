@@ -76,7 +76,7 @@ public final class Gear {
             "&6「这件物品会自动绑定第一个使用它的宿主」",
             "&6给予你像创造模式一样的飞行能力",
             "&7右键 启用/关闭飞行并且绑定自己",
-            "&7蹲下右键移除自己的绑定",        
+            "&7蹲下右键移除自己的绑定"       
     );
     public static final SlimefunItemStack SHIELD = new SlimefunItemStack(
             "INFINITY_SHIELD",

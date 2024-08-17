@@ -190,7 +190,7 @@ public final class Machines {
       public static final SlimefunItemStack DUST_EXTRACTOR_2 = new SlimefunItemStack(
             "DUST_EXTRACTOR_2 ",
             Material.FURNACE,
-            "&6瓜瓜版&8磨粉机Ⅱ",
+            "&6瓜瓜版&8磨粉机",
             "&7将圆石变为矿粉",
             "",
             MachineLore.speed(4),
@@ -236,7 +236,7 @@ public final class Machines {
      public static final SlimefunItemStack INGOT_FORMER_2 = new SlimefunItemStack(
             "INGOT_FORMER_2 ",
             Material.FURNACE,
-            "&6瓜瓜版&8铸锭机Ⅱ",
+            "&6瓜瓜版&8铸锭机",
             "&71比1损耗将矿粉变为锭",
             "",
             MachineLore.speed(4),

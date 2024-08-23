@@ -272,7 +272,7 @@ public final class Machines {
      public static final SlimefunItemStack INFINITY_DUST_INGOT_FORMER_2 = new SlimefunItemStack(
             "INFINITY_DUST_INGOT_FORMER_2",
             Material.FURNACE,
-            "&6瓜瓜版&b无尽&8铸锭一体机Ⅱ",
+            "&6瓜瓜版&b无尽&8高级铸锭一体机",
             "&7将圆石随机变为锭",
             "",
             MachineLore.speed(64),

@@ -151,22 +151,6 @@ public final class SlimefunExtension {
             MachineLore.speed(SlimefunExtension.ADVANCED_DIS_SPEED),
             MachineLore.energyPerSecond(SlimefunExtension.ADVANCED_DIS_ENERGY)
     );
-    public static final SlimefunItemStack INFINITY_ENCHANTER = new SlimefunItemStack(
-            "INFINITY_ENCHANTER",
-            Material.ENCHANTING_TABLE,
-            "&b无尽&5自动附魔机",
-            "",
-            MachineLore.speed(SlimefunExtension.INFINITY_EN_SPEED),
-            MachineLore.energy(SlimefunExtension.INFINITY_EN_ENERGY) + "每次使用"
-    );
-    public static final SlimefunItemStack INFINITY_DISENCHANTER = new SlimefunItemStack(
-            "INFINITY_DISENCHANTER",
-            Material.ENCHANTING_TABLE,
-            "&b无尽&5自动祛魔机",
-            "",
-            MachineLore.speed(SlimefunExtension.INFINITY_DIS_SPEED),
-            MachineLore.energy(SlimefunExtension.INFINITY_DIS_ENERGY) + "每次使用"
-    );
     public static final SlimefunItemStack INFINITY_CAPACITOR = new SlimefunItemStack(
             "INFINITY_CAPACITOR",
             HeadTexture.CAPACITOR_25,

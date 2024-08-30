@@ -769,7 +769,7 @@ public final class Machines {
                 .addRecipe(eightDust, new ItemStack(Material.DIORITE, 16))
                 .addRecipe(eightDust, new ItemStack(Material.GRANITE, 16))
                 .energyPerTick(500).register(plugin);
-         );
+         
          new MachineBlock(Groups.ADVANCED_MACHINES, DUST_VOID_EXTRACTOR, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
                 DUST_EXTRACTOR_2, Materials.VOID_INGOT, DUST_EXTRACTOR_2,
                 Materials.MAGSTEEL_PLATE, SlimefunItems.ENERGIZED_CAPACITOR, Materials.MAGSTEEL_PLATE,

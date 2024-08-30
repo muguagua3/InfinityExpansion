@@ -252,7 +252,7 @@ public final class Machines {
             MachineLore.energyPerSecond(500)
     );
     public static final SlimefunItemStack INGOT_VOID_FORMER = new SlimefunItemStack(
-            "INGOT_FORMER_2",
+            "INGOT_VOID_FORMER",
             Material.FURNACE,
             "&8虚空铸锭机",
             "&71比2损耗将矿粉变为锭",

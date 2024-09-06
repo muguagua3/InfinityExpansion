@@ -417,7 +417,7 @@ public final class Machines {
     );
     public static final SlimefunItemStack INFINITY_REDSTONE = new SlimefunItemStack(
             "INFINITY_REDSTONE",
-            Material.NETHERRACK,
+            Material.FURNACE,
             "&6瓜瓜版&b无尽&8红石生成器",
             "来自木瓜的后备隐藏能源",
             MachineLore.speed(24),
@@ -425,7 +425,7 @@ public final class Machines {
     );
      public static final SlimefunItemStack INFINITY_REDSTONE_2 = new SlimefunItemStack(
             "INFINITY_REDSTONE_2",
-            Material.NETHERRACK,
+            Material.FURNACE,
             "&6瓜瓜版&b无尽&8高级红石生成器",
             "来自木瓜的后备隐藏能源",
             MachineLore.speed(64),
@@ -433,7 +433,7 @@ public final class Machines {
     );
      public static final SlimefunItemStack INFINITY_LAPIS_LAZULI = new SlimefunItemStack(
             "INFINITY_LAPIS_LAZULI",
-            Material.NETHERRACK,
+            Material.FURNACE,
             "&6瓜瓜版&b无尽&8青金石生成器",
             "来自木瓜的后备隐藏能源",
             MachineLore.speed(24),
@@ -441,7 +441,7 @@ public final class Machines {
     );
      public static final SlimefunItemStack INFINITY_LAPIS_LAZULI_2 = new SlimefunItemStack(
             "INFINITY_LAPIS_LAZULI_2",
-            Material.NETHERRACK,
+            Material.FURNACE,
             "&6瓜瓜版&b无尽&8高级青金石生成器",
             "来自木瓜的后备隐藏能源",
             MachineLore.speed(64),

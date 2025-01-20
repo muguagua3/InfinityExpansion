@@ -774,7 +774,7 @@ public final class Machines {
                 DUST_EXTRACTOR_2, Materials.VOID_INGOT, DUST_EXTRACTOR_2,
                 Materials.MAGSTEEL_PLATE, SlimefunItems.ENERGIZED_CAPACITOR, Materials.MAGSTEEL_PLATE,
                 Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT,
-        }).ticksPerOutput(1).addRecipe(eightDust, new ItemStack(Material.COBBLESTONE, 16))
+        }).ticksPerOutput(1).addRecipe(eightDust, new ItemStack(Material.COBBLESTONE, 8))
                 .addRecipe(eightDust, new ItemStack(Material.ANDESITE, 8))
                 .addRecipe(eightDust, new ItemStack(Material.STONE, 8))
                 .addRecipe(eightDust, new ItemStack(Material.DIORITE, 8))
